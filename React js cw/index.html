@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React CDN Example</title>
+    <!-- ReactJS CDN -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <!-- ReactDOM CDN -->
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+  </head>
+  <body>
+    <!-- This is where React will render the component -->
+    <div id="root"></div>
+
+    <!-- ReactJS Code -->
+    <script>
+      // Create React element using React.createElement
+      const element = React.createElement(
+        "h1",
+        { style: { color: "blue" } },
+        "Hello, Welcome to ReactJS Project!"
+      );
+
+      // Render the element to the DOM
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(element);
+    </script>
+  </body>
+</html>
